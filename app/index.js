@@ -34,8 +34,10 @@ server.loadAccount(sourceAccountId)
     transaction.sign(StellarSdk.Keypair.fromSecret(sourceAccountSecret)); // sign the transaction
 
     // transaction is now ready to be sent to the network or saved somewhere
+    console.log(`Transaction envelope:`);
     console.log(transaction.toEnvelope().toXDR('base64'));
 
+    console.log(`Submitting transaction to Stellar network.`);
     server.submitTransaction(transaction)
       .then(function(transactionResult) {
         console.log(JSON.stringify(transactionResult, null, 2));

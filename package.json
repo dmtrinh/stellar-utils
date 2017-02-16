@@ -4,7 +4,7 @@
   "description": "Dead-simple client to create an account and send moolah.",
   "main": "index.js",
   "dependencies": {
-    "stellar-sdk": "0.7.1"
+    "stellar-sdk": "^0.7.2"
   },
   "devDependencies": {},
   "scripts": {
