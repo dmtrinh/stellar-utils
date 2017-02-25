@@ -1,12 +1,13 @@
 "use strict";
 
+var config = require('config');
 var StellarSdk = require('stellar-sdk');
 
-var server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
+var server = new StellarSdk.Server(config.get('Horizon.testnet'));
 
 StellarSdk.Network.useTestNetwork();
-var sourceAccountId = 'GDBO2HSPIU6KXJMORGJZCQ3CTGAQI4EVJJMRTI4PJ6ZWNN7GDBEX5XEH'
-var sourceAccountSecret = 'SAOOXESJE6UHQVPJCKSQHZCKULTNWRHXJDPZ4GYF7LFBCLM7VJWPH5P5';
+var sourceAccountId = config.get('BankA.issuingAccount.publicKey');
+var sourceAccountSecret = config.get('BankA.issuingAccount.secretKey');
 
 // load a test source account and use moolah from that account to fund a NEW destination account
 server.loadAccount(sourceAccountId)

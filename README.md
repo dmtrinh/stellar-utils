@@ -1,12 +1,15 @@
 # Stellar-Client
-A super simple client using the Stellar SDK to demonstrate some basic activities including:
-* retrieval of an existing account
-* creation of new keypairs
-* creation of a transaction
-* creation of a new account
-* submission of a transaction to the Stellar TestNet via a test Horizon server
+This project contains a collection of utilities to perform various operations on the Stellar network:
+* Submission of a simple payment using native asset between two accounts
+* Issuance of a new asset type (called 'Moolah') and funding of a base account
+* Creation of new trustlines
+* Sending payments using Moolahs
 
-## Running this client
+Also included are utilities to test your own Horizon and Stellar-Core deployment.  You may also
+want to grab the [stellar-anchor](https://github.com/dmtrinh/stellar-anchor)) project which
+provides a basic reference implementation for you to quickly become an Anchor.
+
+## Running these utilities
 ```
 git clone https://github.com/dmtrinh/stellar-client
 ```
@@ -14,17 +17,15 @@ Change into the `stellar-client` directory and run:
 ```
 npm install
 ```
-To run this client:
+To run the simple_payment utility:
 ```
-npm start
+node send_payment.js
 ```
 Sample output:
 ```
 ---------- 01:30:12 (dmtrinh) ~/Dev/stellar-client ----------
-==> npm start
 
-> stellar-client@0.0.1 start /Users/dmtrinh/Dev/stellar-client
-> node index.js
+> node send_payment.js
 
 Source account current sequence number: 1698797004521477
 Generating keypair for new Destination account...

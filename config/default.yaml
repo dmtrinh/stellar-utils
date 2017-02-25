@@ -1,0 +1,31 @@
+# You will need to create a total of four test accounts.  Accounts can be
+# created @ https://www.stellar.org/laboratory/.  You may also want to use the
+# Friendbot to fund each bank's issuing account with some lumens.
+BankA:
+  issuingAccount:
+    publicKey:
+    secretKey: 
+  baseAccount:
+    publicKey:
+    secretKey:
+
+BankB:
+  issuingAccount:
+    publicKey:
+    secretKey: 
+  baseAccount:
+    publicKey:
+    secretKey:
+
+Horizon:
+  testnet: https://horizon-testnet.stellar.org
+  local: http://localhost:8000
+
+Bridge:
+  local: http://localhost:8001
+
+Federation:
+  local: http://localhost:8002
+
+Compliance:
+  local: http://localhost:8003
