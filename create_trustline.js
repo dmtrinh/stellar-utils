@@ -1,3 +1,5 @@
+var config = require('config');
+
 var StellarSdk = require('stellar-sdk');
 StellarSdk.Network.useTestNetwork();
 
