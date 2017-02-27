@@ -6,7 +6,7 @@ This project contains a collection of utilities to test various operations on th
 * Sending payments using Moolahs
 
 Also included are a few "smoke tests" to validate your Stellar Anchor deployment.  
-Feel free to grab the [stellar-anchor](https://github.com/dmtrinh/stellar-anchor))
+Feel free to grab the [stellar-anchor](https://github.com/dmtrinh/stellar-anchor)
 project which provides a basic reference implementation for you to quickly become an Anchor.
 
 ## Running these utilities
