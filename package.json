@@ -6,6 +6,7 @@
   "dependencies": {
     "stellar-sdk": "^0.7.2",
     "config": "1.25.1",
+    "request": "2.79.0",
     "js-yaml": "3.8.1"
   },
   "devDependencies": {},

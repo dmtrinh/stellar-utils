@@ -21,7 +21,7 @@ server.loadAccount(receiverKeys.publicKey())
       // The `limit` parameter below is optional
       .addOperation(StellarSdk.Operation.changeTrust({
         asset: moolah,
-        limit: '10000'
+        limit: '100000'
       }))
       .build();
     transaction.sign(receiverKeys);

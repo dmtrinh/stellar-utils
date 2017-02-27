@@ -3,9 +3,11 @@ var config = require('config');
 var StellarSdk = require('stellar-sdk');
 
 StellarSdk.Network.useTestNetwork();
+
+// Enable connection via non-secure HTTP in case you don't yet have TLS certs installed
 var opts = {allowHttp:true};
 
-// Point to our local Horizon server
+// Point to your local Horizon server
 var server = new StellarSdk.Server(config.get('Horizon.local'), opts);
 
 console.log('Querying test account...');

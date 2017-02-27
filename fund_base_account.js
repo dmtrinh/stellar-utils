@@ -24,7 +24,7 @@ server.loadAccount(issuingKeys.publicKey())
       .addOperation(StellarSdk.Operation.payment({
         destination: baseAccountPublicKey,
         asset: moolah,
-        amount: '1000'
+        amount: '500'
       }))
       .build();
     transaction.sign(issuingKeys);

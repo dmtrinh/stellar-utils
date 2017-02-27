@@ -1,13 +1,13 @@
-# Stellar-Client
-This project contains a collection of utilities to perform various operations on the Stellar network:
+# Stellar-Utils
+This project contains a collection of utilities to test various operations on the Stellar network:
 * Submission of a simple payment using native asset between two accounts
 * Issuance of a new asset type (called 'Moolah') and funding of a base account
 * Creation of new trustlines
 * Sending payments using Moolahs
 
-Also included are utilities to test your own Horizon and Stellar-Core deployment.  You may also
-want to grab the [stellar-anchor](https://github.com/dmtrinh/stellar-anchor)) project which
-provides a basic reference implementation for you to quickly become an Anchor.
+Also included are a few "smoke tests" to validate your Stellar Anchor deployment.  
+Feel free to grab the [stellar-anchor](https://github.com/dmtrinh/stellar-anchor))
+project which provides a basic reference implementation for you to quickly become an Anchor.
 
 ## Running these utilities
 ```

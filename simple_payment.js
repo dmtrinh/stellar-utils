@@ -9,7 +9,7 @@ StellarSdk.Network.useTestNetwork();
 var sourceAccountId = config.get('BankA.issuingAccount.publicKey');
 var sourceAccountSecret = config.get('BankA.issuingAccount.secretKey');
 
-// load a test source account and use moolah from that account to fund a NEW destination account
+// load a test source account and use lumens from that account to fund a NEW destination account
 server.loadAccount(sourceAccountId)
   .then(function(sourceAccount) {
 
