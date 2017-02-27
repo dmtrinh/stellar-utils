@@ -7,8 +7,8 @@ StellarSdk.Network.useTestNetwork();
 var server = new StellarSdk.Server(config.get('Horizon.testnet'));
 
 // Keys for accounts to issue and receive the new asset
-var issuingKeys = StellarSdk.Keypair.fromSecret('SAOOXESJE6UHQVPJCKSQHZCKULTNWRHXJDPZ4GYF7LFBCLM7VJWPH5P5');
-var receivingKeys = StellarSdk.Keypair.fromSecret('SAMNEWT4AF46AUM2M7LRAHDATDVFNMH2D4KLUSVWRHYAPWBE6OWBS524');
+var issuingKeys = StellarSdk.Keypair.fromSecret(config.get('BankA.issuingAccount.secretKey'));
+var receivingKeys = StellarSdk.Keypair.fromSecret(config.get('BankA.baseAccount.secretKey'));
 
 // Create an object to represent the new asset
 var moolah = new StellarSdk.Asset('Moolah', issuingKeys.publicKey());
@@ -21,7 +21,7 @@ server.loadAccount(receivingKeys.publicKey())
       // The `limit` parameter below is optional
       .addOperation(StellarSdk.Operation.changeTrust({
         asset: moolah,
-        limit: '10000'
+        limit: '50000'
       }))
       .build();
     transaction.sign(receivingKeys);
