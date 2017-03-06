@@ -11,9 +11,9 @@ project which provides a basic reference implementation for you to quickly becom
 
 ## Running these utilities
 ```
-git clone https://github.com/dmtrinh/stellar-client
+git clone https://github.com/dmtrinh/stellar-utils
 ```
-Change into the `stellar-client` directory and run:
+Change into the `stellar-utils` directory and run:
 ```
 npm install
 ```
@@ -23,7 +23,7 @@ node send_payment.js
 ```
 Sample output:
 ```
----------- 01:30:12 (dmtrinh) ~/Dev/stellar-client ----------
+---------- 01:30:12 (dmtrinh) ~/Dev/stellar-utils ----------
 
 > node send_payment.js
 
@@ -51,6 +51,6 @@ Submitting transaction to Stellar network.
 
 Success! View the transaction at: 
 https://horizon-testnet.stellar.org/transactions/766ba1494b1ee62e73b4160e2bd8aa887f8f7d2ce13e184f60dfe1ec48f7dcb0
----------- 01:32:02 (dmtrinh) ~/Dev/stellar-client ----------
+---------- 01:32:02 (dmtrinh) ~/Dev/stellar-utils ----------
 ```
 Have fun!

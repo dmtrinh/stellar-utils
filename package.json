@@ -1,13 +1,14 @@
 {
-  "name": "stellar-client",
+  "name": "stellar-utils",
   "version": "0.0.1",
-  "description": "Dead-simple client to create an account and send moolah.",
+  "description": "A collection of utilities to test various operations on the Stellar network",
   "main": "simple_payment.js",
   "dependencies": {
     "stellar-sdk": "^0.7.2",
     "config": "1.25.1",
     "request": "2.79.0",
-    "js-yaml": "3.8.1"
+    "js-yaml": "3.8.1",
+    "readline-sync": "1.4.6"
   },
   "devDependencies": {},
   "scripts": {
